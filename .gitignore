@@ -1,0 +1,16 @@
+.jshintrc
+www/
+node_modules/
+.travis.yml
+*.swp
+.sass-cache/
+mods/.sass-cache/
+.DS_Store
+.idea/
+source/
+zip/
+*.zip
+.project
+*.log
+coverage/
+
