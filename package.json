@@ -3,11 +3,13 @@
   "description": "A Vue.js project",
   "author": "wangtianlun",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors --hide-modules",
+    "watch": "webpack --watch"
   },
   "dependencies": {
-    "vue": "^1.0.0"
+    "vue": "^1.0.0",
+    "vue-router": "~0.7.13"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
