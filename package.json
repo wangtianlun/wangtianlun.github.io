@@ -1,6 +1,6 @@
 {
-  "name": "vue-test",
-  "description": "A Vue.js project",
+  "name": "wtl",
+  "description": "个人博客",
   "author": "wangtianlun",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --host 0.0.0.0",

@@ -10,11 +10,7 @@
 export default {
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello Vue!'
+      msg: 'Hello Vue1!'
     }
   }
 
@@ -22,7 +18,5 @@ export default {
 </script>
 
 <style lang="less">
-  #app {
-    color: red;
-  }
+
 </style>
