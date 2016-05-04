@@ -10,6 +10,8 @@ Vue.config.debug = process.env.NODE_ENV !== 'production'
 
 Router.start(App, '#app');
 window.vmCache = {};
+window.vmCache.isInitial = false;
+
 Router.beforeEach( (transition) => {
     // let from = transition.from;
     // if(from.keepAlive) {
@@ -20,6 +22,12 @@ Router.beforeEach( (transition) => {
     //     // transition.abort();
     //     // return;
     // }
+   	
+    if(!window.vmCache.isInitial) {
+			window.vmCache.isInitial = true;
+			window.location.reload();
+		}
+
     if ( transition.to.auth ) {
         let from = transition.from;
         let to = transition.to;
