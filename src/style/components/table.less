@@ -1,5 +1,22 @@
 // 表格
 .wtl-table-container {
+	position: relative;
+
+	.spin {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, -50%);
+	}
+
+	&.loading .wtl-table-body{
+	  opacity: .7;
+	  -webkit-filter: blur(1px);
+	  filter: blur(1px);
+	  pointer-events: none;
+	}
+
 	table.wtl-table {
 		border-collapse: collapse;
 		border-spacing: 0;

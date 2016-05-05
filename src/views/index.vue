@@ -1,6 +1,6 @@
 <template lang="jade">
 	.index
-		v-table(:data-source="dataSource", :columns="columns", :row-selection="rowSelection", :row-key="rowKey")
+		v-table(:data-source="dataSource", :columns="columns", :row-selection="rowSelection", :row-key="rowKey", :loading="true")
 </template>
 
 <script>
