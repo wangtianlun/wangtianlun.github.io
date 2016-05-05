@@ -1,6 +1,6 @@
 <template lang="jade">
 	.index
-		v-table(:data-source="dataSource", :columns="columns", :row-selection="rowSelection")
+		v-table(:data-source="dataSource", :columns="columns", :row-selection="rowSelection", :row-key="rowKey")
 </template>
 
 <script>
@@ -8,6 +8,7 @@
 	export default {
 		data () {
 			return {
+				rowKey: "kId",
 				dataSource: [
 					{
 						"kId": 1,
@@ -15,6 +16,14 @@
 					},
 					{
 						"kId": 2,
+						"createTime": "2016-01-01" 
+					},
+					{
+						"kId": 3,
+						"createTime": "2016-01-01" 
+					}
+					,{
+						"kId": 4,
 						"createTime": "2016-01-01" 
 					}
 				],
@@ -31,6 +40,9 @@
 					}
 				],
 				rowSelection: {
+					getCheckboxProps(record) {
+              return {};
+          },
           onSelect(record, selected, selectedRows) {
                     
           }
