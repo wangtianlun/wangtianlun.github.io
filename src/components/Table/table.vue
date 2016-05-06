@@ -1,5 +1,6 @@
 <template lang="jade">
 	.wtl-table-container(:class="{loading: loading}")
+		//- Spin(v-if="loading")
 		.wtl-table-body
 			table.wtl-table
 				thead.table-thead
@@ -10,19 +11,20 @@
 							| {{ column.title }}
 				tbody.table-tbody
 					tr(v-if="!dataSource.length")
-						td(colspan="10000" style="text-align: center;")
+						td(colspan="10000" style="text-align: center;" class="wtl-table-empty")
 							| {{ noDataTip }}
 					tr(v-for="(rowIndex, record) in dataSource" ,:track-by="$index")
 						td(v-if="rowSelection" class="table-selection-column")
 							input(type="checkbox" @change.stop="onCheckOne($event,record)" v-model="checkedValues", :value="record[rowKey]" v-bind="rowSelection.getCheckboxProps(record)")
 						td(v-for="column in columns")
 							template(v-if="column.render")
-								| {{{ column.render(record[column.dataIndex], record, rowIndex) }}}
+								{{{ column.render(record[column.dataIndex], record, rowIndex) }}}
 							template(v-else)
 								| {{ record[column.dataIndex] }}
 </template>
 
 <script>
+	// import Spin from '../Spin/Spin.vue';
 	export default {
 		props: {
 			dataSource: Array,
@@ -126,6 +128,9 @@
 
 				self.isCheckedAll = self.checkedRows.length === self.checkableRows.length;
 			}
+		},
+		components: {
+			// Spin
 		}
 	}
 </script>

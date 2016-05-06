@@ -1,8 +1,16 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import index from './views/index.vue';
+
+// 展示类
+import table from './components/Table/table.vue';
+import spin  from './components/Spin/spin.vue'; 
+
 const components = {
-    'index'       : require('./views/index.vue')
+    'index'       : index,
+    'table'       : table,
+    'spin'        : spin
 };
 
 // install router
@@ -18,9 +26,13 @@ router.map({
         component: components.index,
         subRoutes: {
             '/': {
-                component: {
-                    template: ''
-                }
+                component: components.index
+            },
+            '/table': {
+                component: components.table
+            },
+            '/spin': {
+                component: component.spin
             }
         }
     },

@@ -3,8 +3,8 @@
   "description": "个人博客",
   "author": "wangtianlun",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0",
-    "build": "cross-env NODE_ENV=production webpack --progress --colors --hide-modules",
+    "docs": "webpack-dev-server --inline --hot --host 0.0.0.0",
+    "build": "webpack --progress --hide-modules --config  webpack.build.js && NODE_ENV=production webpack --progress --hide-modules --config  webpack.build.js",
     "watch": "webpack --watch"
   },
   "dependencies": {
@@ -31,7 +31,8 @@
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
-    "vue-loader": "^8.0.0",
+    "vue-loader": "~8.2.0",
+    "vue-router": "~0.7.11",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"

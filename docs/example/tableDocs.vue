@@ -1,10 +1,10 @@
 <template lang="jade">
-	.index
+	.example
 		v-table(:data-source="dataSource", :columns="columns", :row-selection="rowSelection", :row-key="rowKey", :loading="false")
 </template>
 
 <script>
-	import vTable from '../components/Table/table.vue';
+	import vTable from 'src/components/Table/table.vue'
 	export default {
 		data () {
 			return {
@@ -60,9 +60,6 @@
           }
 				}
 			}
-		},
-		methods: {
-
 		},
 		components: {
 			vTable
