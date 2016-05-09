@@ -32,7 +32,7 @@ router.map({
                 component: components.table
             },
             '/spin': {
-                component: component.spin
+                component: components.spin
             }
         }
     },
