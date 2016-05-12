@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var extractCss = new ExtractTextPlugin('style.css')
 
 module.exports = {
   entry: './src/main.js',
@@ -16,8 +17,11 @@ module.exports = {
       new webpack.ProvidePlugin({
         Vue: 'vue'
       }),
-      new webpack.optimize.CommonsChunkPlugin('vue', 'vue.js'),
-      new ExtractTextPlugin('style.css')
+      new webpack.optimize.CommonsChunkPlugin({
+        name: 'vue',
+        filename: 'vue.js'
+      }),
+      extractCss
   ],
   module: {
     loaders: [
