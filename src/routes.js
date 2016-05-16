@@ -2,6 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import index from './views/index.vue';
+// 简历
+import resume from './views/resume.vue';
 
 // 展示类
 import table from './components/Table/table.vue';
@@ -9,6 +11,7 @@ import spin  from './components/Spin/spin.vue';
 
 const components = {
     'index'       : index,
+    'resume'      : resume,
     'table'       : table,
     'spin'        : spin
 };
@@ -36,7 +39,9 @@ router.map({
             }
         }
     },
-
+    '/resume'                               : {
+        component: components.resume
+    },
     //  not found
     '*': {
         component: {
@@ -49,7 +54,7 @@ router.map({
 });
 
 router.redirect({
-    '/': 'index'
+    '/': 'resume'
 })
 
 export default router;

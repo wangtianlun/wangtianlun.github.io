@@ -4,19 +4,25 @@ var extractCss = new ExtractTextPlugin('style.css')
 var path = require('path')
 
 module.exports = {
-    entry: './docs/index.js',
+    // entry: './docs/index.js',
+    // output: {
+    //     path: './build',
+    //     publicPath: '/build/',
+    //     filename: 'build-docs.js'
+    // },
+    entry: './src/main.js',
     output: {
-        path: './build',
-        publicPath: '/build/',
-        filename: 'build-docs.js'
+        path: './dist',
+        publicPath: '/dist/',
+        filename: 'build.js'
     },
-    resolve: {
-      root: path.resolve('./'),
-      extensions: ['', '.js', '.vue'],
-      alias: {
-        'src': path.resolve(__dirname, './src')
-      }
-    },
+    // resolve: {
+    //   root: path.resolve('./'),
+    //   extensions: ['', '.js', '.vue'],
+    //   alias: {
+    //     'src': path.resolve(__dirname, './src')
+    //   }
+    // },
     resolveLoader: {
       root: path.join(__dirname, 'node_modules')
     },
@@ -44,16 +50,16 @@ module.exports = {
     plugins: [
       extractCss
     ],
-    // vue: {
-    //     loaders: {
-    //         less: ExtractTextPlugin.extract(
-    //                 // activate source maps via loader query
-    //                 'css?sourceMap!' +
-    //                 'less?sourceMap'
-    //                 ),
+    vue: {
+        loaders: {
+            less: ExtractTextPlugin.extract(
+                    // activate source maps via loader query
+                    'css?sourceMap!' +
+                    'less?sourceMap'
+                    ),
 
-    //     }
-    // },
+        }
+    },
     babel: {
         presets: ['es2015'],
         plugins: ['transform-runtime']
