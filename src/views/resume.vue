@@ -20,7 +20,7 @@
 								| 工作经历
 						li(class="item", :class="{current: active==4}", @click.stop.prevent="onTabClick($event, 4)",data-index="4")
 							a(href="javascript:void(0);" class="item")
-								| 自我介绍
+								| 联系我
 				.right
 					.line
 					i(class="iconfont icon-control" style="font-size: 14px; color: rgb(94,94,94);")
@@ -127,8 +127,10 @@
 										.desc-footer
 											| 2015-06-01 ~ 至今
 				section(v-show="active==4" transition="toggle")
-					| 4
-
+					.other
+						h1
+							| 联系我
+						.content
 </template>
 
 <script>
@@ -332,7 +334,7 @@
 					background-repeat: repeat-x;
 					.content {
 						position: absolute;
-						top: 160px;
+						top: 100px;
 						left: 50%;
 						width: 1000px;
 						padding-left: 50px;
@@ -377,6 +379,35 @@
 								}
 							}
 						}
+					}
+				}
+				.other {
+					width: 100%;
+					height: 700px;
+					background: url(../style/assets/bg4.jpg);
+					background-size: 100%;
+					position: relative;
+					h1 {
+						height: 100px;
+						text-align: center;
+						line-height: 80px;
+						color: #fff;
+						font-size: 28px;
+					}
+					.content {
+						position: absolute;
+						top: 100px;
+						left: 50%;
+						width: 1000px;
+						height: 300px;
+						padding-left: 50px;
+						padding-top: 50px;
+						padding-bottom: 50px;
+						margin-left: -525px;
+						border: 1px solid #fff;
+						border-radius: 3px;
+						background: url(../style/assets/code.png);
+						background-size: 100%;
 					}
 				}
 			}
