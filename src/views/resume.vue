@@ -103,7 +103,7 @@
 											p.duty
 												| 职责：基于百度地图，完成GIS项目后台录入页面及前端SDK的开发；
 										.desc-footer
-											| 2014-06-01 ~ 2014-08-14
+											| 2014-06-01 - 2014-08-14
 								li
 									.desc
 										.desc-header
@@ -112,7 +112,7 @@
 											p.duty
 												| 职责：根据交互需求，完成相关页面开发以及代码重构，项目的日常维护；
 										.desc-footer
-											| 2014-08-14 ~ 2015-05-03
+											| 2014-08-14 - 2015-05-03
 								li
 									.desc
 										.desc-header
@@ -121,7 +121,7 @@
 											p.duty
 												| 职责：配合后台开发人员，快速完成前端页面的编写，并做相关前端知识的指导；
 										.desc-footer
-											| 2015-05-04 ~ 2015-06-01
+											| 2015-05-04 - 2015-06-01
 								li
 									.desc
 										.desc-header
@@ -130,7 +130,7 @@
 											p.duty
 												| 职责：新老天机变业务页面的编写，网厅直充类业务部分H5页面的开发，部分170号卡预约活动的H5页面的搭建，vue-conponent组件库的开发工作等；
 										.desc-footer
-											| 2015-06-01 ~ 至今
+											| 2015-06-01 - 至今
 				section(v-show="active==4" transition="toggle")
 					.other
 						h1
@@ -292,7 +292,7 @@
 					.content {
 						position: absolute;
 						left: 50%;
-						top: 50%;
+						top: 45%;
 						width: 500px;
 						height: 500px;
 						margin-left: -250px;
