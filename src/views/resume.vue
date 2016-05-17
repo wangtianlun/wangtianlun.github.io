@@ -136,6 +136,9 @@
 						h1
 							| 联系我
 						.content
+		.fixed-rt
+			a(href="javascript:void(0);")
+				i(class="iconfont icon-resume")
 </template>
 
 <script>
@@ -417,6 +420,20 @@
 			}
 		}
 	}
+
+.fixed-rt {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	a {
+		text-decoration: none;
+		color: #fff;
+		i {
+			font-size: 70px;
+			color: #fff;
+		}
+	}
+}
 
 .toggle-transition {
   transition: all .3s ease;
