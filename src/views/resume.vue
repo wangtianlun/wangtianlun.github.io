@@ -51,6 +51,11 @@
 									| 15858245184
 							.control-group
 								label.control-label
+									| 学历：
+								.controls
+									| 本科
+							.control-group
+								label.control-label
 									| 工作经验：
 								.controls
 									| 两年
@@ -172,7 +177,7 @@
 					float: left;
 					height: 100%;
 					.inspect {
-						margin-top:-3px;
+						margin-top:-2px;
 						display: inline-block;
 						vertical-align: middle;
 						height: 28px;
@@ -214,7 +219,7 @@
 					}
 					.category {
 						margin-left: 5px;
-						margin-top:-3px;
+						margin-top:-4px;
 						display: inline-block;
 						vertical-align: middle;
 						height: 28px;
