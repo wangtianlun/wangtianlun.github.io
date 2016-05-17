@@ -171,9 +171,13 @@
 				width: 100%;
 				overflow: hidden;
 				background-color: #f3f3f3;
+
 				&:after, &:before{
-					display: table;
-					clear: both;
+					content:" "; 
+			    display:block; 
+			    height:0; 
+			    visibility:hidden; 
+			    clear:both; 
 				}
 
 				.left {
