@@ -65,27 +65,27 @@
 						.content
 							ul
 								li
-									| 了解 W3C 标准、(X)HTML 语义化、用户体验等相关知识；
+									| 1. 了解 W3C 标准、(X)HTML 语义化、用户体验等相关知识；
 								li
-									| 在解放生产力方面，可以熟练使用grunt, webpack等工具对项目代码进行构建或打包;
+									| 2. 在解放生产力方面，可以熟练使用grunt, webpack等工具对项目代码进行构建或打包;
 								li
-									| 能够做到预处理语言less及sass的熟练使用，rem计算，从而大大提高开发效率;
+									| 3. 能够做到预处理语言less及sass的熟练使用，rem计算，从而大大提高开发效率;
 								li
-									| Jade, Handlebars等模板引擎也能熟练使用;
+									| 4. Jade, Handlebars等模板引擎也能熟练使用;
 								li
-									| jQuery, Kissy, Kimi, Vue等Javascript库的熟练使用;
+									| 5. jQuery, Kissy, Kimi, Vue等Javascript库的熟练使用;
 								li
-									| 了解页面优化的一些行之有效的方案，当然这里也包括“雅虎军规”;
+									| 6. 了解页面优化的一些行之有效的方案，当然这里也包括“雅虎军规”;
 								li
-									| 能够通过目前掌握的知识进行H5页面的开发，并做到较高的适配度;
+									| 7. 能够通过目前掌握的知识进行H5页面的开发，并做到较高的适配度;
 								li
-									| 能够配合交互设计师，完成PC端页面及H5页面的高还原度的产出;
+									| 8. 能够配合交互设计师，完成PC端页面及H5页面的高还原度的产出;
 								li
-									| 熟练使用Chrome DevTool，wenire，FireBug，Charles，Fiddler等工具;
+									| 9. 熟练使用Chrome DevTool，wenire，FireBug，Charles，Fiddler等工具;
 								li
-									| 能够在OS X 环境下进行开发;
+									| 10. 能够在OS X 环境下进行开发;
 								li
-									| 熟练使用Git，npm;
+									| 11. 熟练使用Git，npm;
 				section(v-show="active==3" transition="toggle")
 					.experience
 						.content
@@ -314,7 +314,6 @@
 						border: 1px solid #fff;
 						border-radius: 3px;
 						ul {
-							list-style-type: decimal;
 							li {
 								line-height: 1.2;
 								color: #fff;
