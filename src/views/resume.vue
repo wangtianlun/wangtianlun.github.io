@@ -370,7 +370,9 @@
 									}
 									.desc-footer {
 										height: 60px;
-										line-height: 60px;
+										line-height: 20px;
+										box-sizing: border-box;
+										padding: 20px 0;
 										color: #fff;
 										text-align: center;
 										font-weight: bold;
