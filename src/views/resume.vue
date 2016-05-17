@@ -237,10 +237,10 @@
 							cursor: pointer;
 							display: inline-block;
 							height: 28px;
+							box-sizing: border-box;
 							&.current {
 								transition: border .3s linear;
 								border-bottom: 1px solid #3e82f7;
-								height: 27px;
 							}
 							&:hover {
 								background-color: rgba(218,218,218,.5)
