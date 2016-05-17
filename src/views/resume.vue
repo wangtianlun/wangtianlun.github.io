@@ -395,11 +395,10 @@
 					}
 				}
 				.other {
+					position: relative;
 					width: 100%;
 					height: 700px;
-					background: url(../style/assets/bg4.jpg);
-					background-size: 100%;
-					position: relative;
+					background: linear-gradient(154deg, #627490 0%,#8b9fb4 100%);
 					h1 {
 						height: 100px;
 						text-align: center;
