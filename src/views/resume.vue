@@ -91,6 +91,8 @@
 									| 10. 能够在OS X 环境下进行开发;
 								li
 									| 11. 熟练使用Git，npm;
+								li
+									| 12. 熟练使用ES6;
 				section(v-show="active==3" transition="toggle")
 					.experience
 						.content
