@@ -20,7 +20,7 @@
 								| 工作经历
 						li(class="item", :class="{current: active==4}", @click.stop.prevent="onTabClick($event, 4)",data-index="4")
 							a(href="javascript:void(0);" class="item")
-								| 联系我
+								| 关于我
 				.right
 					.line
 					i(class="iconfont icon-control" style="font-size: 14px; color: rgb(94,94,94);")
@@ -417,7 +417,7 @@
 						margin-left: -525px;
 						border: 1px solid #fff;
 						border-radius: 3px;
-						background: url(../style/assets/code.png);
+						background: url(../style/assets/json.png);
 						background-size: 100%;
 					}
 				}
