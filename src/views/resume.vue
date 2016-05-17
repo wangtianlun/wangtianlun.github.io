@@ -157,12 +157,10 @@
 			width: 100%;
 			height: 300px;
 			border: none;
-			// border-top: 1px solid #a3a3a3;
 			.console-header {
 				height: 28px;
 				line-height: 28px;
 				width: 100%;
-				border-top: 1px solid #a3a3a3;
 				overflow: hidden;
 				background-color: #f3f3f3;
 				&:after, &:before{
@@ -340,7 +338,7 @@
 						padding-top: 50px;
 						padding-bottom: 50px;
 						margin-left: -525px;
-						border: 1px solid #fff;
+						border: 2px solid #fff;
 						border-radius: 3px;
 						ul{
 							li {
