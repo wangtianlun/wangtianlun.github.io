@@ -4,7 +4,7 @@
   "author": "wangtianlun",
   "scripts": {
     "docs": "webpack-dev-server --inline --hot --host 0.0.0.0",
-    "build": "webpack --progress --hide-modules --config  webpack.build.js && NODE_ENV=production webpack --progress --hide-modules --config  webpack.build.js",
+    "build": "webpack --progress --hide-modules --config  webpack.config.js && NODE_ENV=production webpack --progress --hide-modules --config  webpack.config.js",
     "watch": "webpack --watch"
   },
   "dependencies": {
